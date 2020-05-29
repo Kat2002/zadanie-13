@@ -1,0 +1,38 @@
+public class MainActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate( Bundle savedInstanceState) {
+     super.onCreate(savedInstanceState);
+ setContentView(R.layout.activity_main);
+    }
+    public void onClick(View view) {
+        int[][] massiv = new int[10][10];
+        for (int x=0;x < massiv.length;x++){
+            for (int y=0;y < massiv[a].length;y++){
+                massiv[x][y]=(int)(Math.random()*10);
+            }
+        }
+        for (int i=0;i < massiv.length;i++,System.out.println()){
+            for (int j=0;j < massiv[i].length;j++){
+                System.out.print(massiv[i][j]+" ");
+            }}
+        for ( int s = 0; s < massiv.length; ++h ) {
+            for ( int t = 0; t < massiv[h].length; ++t ) {
+                int lastF = t + 1;
+                for ( int lastH = s; lastH < massiv.length; ++lastH ) {
+                    while ( lastF < massiv[lastF].length) {
+                        if ( massiv[lastH][lastF] < massiv[h][f] ) {
+                            int tmp = massiv[s][t];
+                            massiv[h][f] = massiv[lastH][lastF];
+                            massiv[lastH][lastF] = tmp;
+                        }
+                        ++lastF;
+                    }
+                    lastF = 0;
+                }
+            }
+        }
+        for ( int i = 0; i < massiv.length; ++i )
+            System.out.println(java.util.Arrays.toString(massiv[i]));
+    }
+}
